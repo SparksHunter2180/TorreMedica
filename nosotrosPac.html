@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Torre Médica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .team-card img {
+      height: 250px;
+      object-fit: cover;
+    }
+    .card-body h5 {
+      font-size: 1.2rem;
+    }
+    .footer-icons i {
+      font-size: 1.5rem;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.png" alt="Logotipo Torre Médica" width="50">
+      </a>
+      <span class="navbar-text">Tu salud, nuestra prioridad</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="indexPac.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="nosotrosPac.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="especialidadesPac.html">Especialidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="promocionesPac.html">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactoPac.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="loginPac.html">Iniciar Sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Misión, Visión y Valores -->
+  <div class="container mt-4">
+    <h2 class="text-center">Nosotros</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Misión</h4>
+        <p>Brindar atención médica integral de calidad, comprometidos con el bienestar de nuestros pacientes mediante el uso de tecnología avanzada y un equipo de médicos altamente capacitado.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Visión</h4>
+        <p>Ser la clínica líder en atención médica personalizada, con innovación constante y un enfoque centrado en la salud y el bienestar de nuestros pacientes.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Valores</h4>
+        <ul>
+          <li><strong>Compromiso:</strong> Brindamos atención médica con responsabilidad y dedicación.</li>
+          <li><strong>Calidad:</strong> Buscamos la excelencia en todos los servicios que ofrecemos.</li>
+          <li><strong>Confianza:</strong> Generamos relaciones de confianza con nuestros pacientes.</li>
+          <li><strong>Respeto:</strong> Valoramos a nuestros pacientes y sus necesidades de salud.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Equipo Médico -->
+  <div class="container mt-4">
+    <h2 class="text-center">Equipo Médico</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card team-card">
+          <img src="assets/doctor1.jpg" class="card-img-top" alt="Dr. Pérez">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Pérez</h5>
+            <p class="card-text">Cardiólogo con más de 10 años de experiencia en el tratamiento de enfermedades cardíacas. Comprometido con la salud y el bienestar de sus pacientes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card team-card">
+          <img src="assets/doctor2.png" class="card-img-top" alt="Dra. Gómez">
+          <div class="card-body">
+            <h5 class="card-title">Dra. Gómez</h5>
+            <p class="card-text">Especialista en Ginecología, con un enfoque integral en la salud femenina. Con más de 8 años de experiencia atendiendo pacientes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card team-card">
+          <img src="assets/doctor3.png" class="card-img-top" alt="Dr. López">
+          <div class="card-body">
+            <h5 class="card-title">Dr. López</h5>
+            <p class="card-text">Médico General con enfoque en la prevención y promoción de la salud. Especializado en atención primaria.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card team-card">
+          <img src="assets/doctor4.png" class="card-img-top" alt="Dra. Martínez">
+          <div class="card-body">
+            <h5 class="card-title">Dra. Martínez</h5>
+            <p class="card-text">Especialista en Pediatría, comprometida con el cuidado integral de la salud infantil. Atención a niños desde su nacimiento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-primary text-center py-3 mt-5">
+    <p>&copy; 2024 Torre Médica. Todos los derechos reservados.</p>
+    <div class="footer-icons">
+      <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

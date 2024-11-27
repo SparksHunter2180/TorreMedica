@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Torre Médica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .carousel-inner img {
+      height: 300px; /* Ajusta la altura */
+      object-fit: cover; /* Mantiene las proporciones de la imagen */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.png" alt="Logotipo Torre Médica" width="50">
+      </a>
+      <span class="navbar-text">Tu salud, nuestra prioridad</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="indexPac.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotrosPac.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="especialidadesPac.html">Especialidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="promocionesPac.html">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactoPac.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="loginPac.html">Iniciar Sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slider -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/promocion1.jpg" class="d-block w-100" alt="Promoción 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Promoción de bienvenida</h5>
+          <p>Descuento del 20% en consultas médicas para nuevos pacientes.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/promocion2.jpg" class="d-block w-100" alt="Promoción 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Chequeo Preventivo</h5>
+          <p>Promoción por tiempo limitado: chequeo médico completo con un 15% de descuento.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/promocion3.jpg" class="d-block w-100" alt="Promoción 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Al cuidado de los mayores</h5>
+          <p>Toma de glucosa y presión arterial gratis agendando tu primera cita.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Especialidades -->
+  <div class="container mt-4">
+    <h2 class="text-center">Especialidades Médicas</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/medicina_interna.jpg" class="card-img-top" alt="Medicina Interna">
+          <div class="card-body">
+            <h5 class="card-title">Medicina Interna</h5>
+            <p class="card-text">Atención integral para adultos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/cardiologia.jpg" class="card-img-top" alt="Cardiología">
+          <div class="card-body">
+            <h5 class="card-title">Cardiología</h5>
+            <p class="card-text">Tratamiento de enfermedades del corazón.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/ginecologia.jpg" class="card-img-top" alt="Ginecología">
+          <div class="card-body">
+            <h5 class="card-title">Ginecología</h5>
+            <p class="card-text">Atención especializada para la salud femenina.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-primary text-center py-3 mt-5">
+    <p>&copy; 2024 Torre Médica. Todos los derechos reservados.</p>
+    <div>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

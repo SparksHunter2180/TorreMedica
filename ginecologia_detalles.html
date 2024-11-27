@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardiología - Torre Médica</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .gallery img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    .doctor-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.png" alt="Logotipo Torre Médica" width="50">
+      </a>
+      <span class="navbar-text">Tu salud, nuestra prioridad</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="indexPac.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="especialidadesPac.html">Especialidades</a></li>
+          <li class="nav-item"><a class="nav-link active" href="ginecologia_detalles.html">Ginecología</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactoPac.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="loginPac.html">Iniciar Sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container mt-4">
+    <h2 class="text-center mb-4">Ginecología</h2>
+
+    <!-- Información básica -->
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <h4>Información del Consultorio</h4>
+        <p><strong>Número de Consultorio:</strong> 102</p>
+        <p><strong>Teléfono de Contacto:</strong> +1 432 582 790</p>
+      </div>
+      <div class="col-md-6">
+        <h4>Acerca de Ginecología</h4>
+        <p>La especialidad de Ginecología se basa en la atención de las mujeres durante el embarazo y el parto, y en el diagnóstico y tratamiento de enfermedades de los órganos reproductivos femeninos.</p>
+      </div>
+    </div>
+
+    <!-- Galería -->
+    <h4 class="mb-3">Galería de Imágenes</h4>
+    <div class="row gallery">
+      <div class="col-md-4">
+        <img src="assets/ginecologia_instalaciones1.jpg" alt="Instalaciones Ginecología">
+      </div>
+      <div class="col-md-4">
+        <img src="assets/doctor2.png" alt="Médico Ginecología">
+      </div>
+    </div>
+
+    <!-- Lista de Médicos -->
+    <h4 class="mt-5">Médicos Especialistas</h4>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card doctor-card">
+          <img src="assets/doctor2.png" class="card-img-top" alt="Dra. Ana López">
+          <div class="card-body">
+            <h5 class="card-title">Dra. Ana López</h5>
+            <p class="card-text">Ginecóloga especialista en salud femenina y atención integral durante el embarazo.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">Agendar Cita</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para el Formulario -->
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="formModalLabel">Agendar Cita con la Dra. Ana López</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <form id="appointmentForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Número de Teléfono</label>
+              <input type="tel" class="form-control" id="phone" placeholder="123-456-7890" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Aceptar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-primary text-center py-3 mt-5">
+    <p>&copy; 2024 Torre Médica. Todos los derechos reservados.</p>
+    <div class="footer-icons">
+      <a href="#" class="text-dark mx-2"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-dark mx-2"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-dark mx-2"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Cierra el modal al enviar el formulario
+    document.getElementById('appointmentForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // Evita el envío real del formulario
+      alert('¡Cita agendada con éxito!');
+      var formModal = document.getElementById('formModal');
+      var modal = bootstrap.Modal.getInstance(formModal);
+      modal.hide(); // Cierra el modal
+    });
+  </script>
+</body>
+
+</html>

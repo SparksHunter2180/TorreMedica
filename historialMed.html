@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial Clínico - Torre Médica</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.png" alt="Logotipo Torre Médica" width="50">
+      </a>
+      <span class="navbar-text">Tu salud, nuestra prioridad</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="indexMed.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotrosMed.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="agendaMed.html">Agenda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="historialMed.html">Historial Clínico</a></li>
+          <li class="nav-item"><a class="nav-link" href="loginMed.html">Iniciar Sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container mt-4">
+    <h1 class="text-center">Historial Clínico</h1>
+    <p class="text-center">Aquí puedes revisar los diagnósticos y tratamientos realizados.</p>
+    <!-- Historial -->
+    <div class="accordion" id="historialAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Consulta del 20/11/2024
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#historialAccordion">
+          <div class="accordion-body">
+            <strong>Diagnóstico:</strong> Gripe común.<br>
+            <strong>Tratamiento:</strong> Reposo y paracetamol cada 8 horas.<br>
+            <strong>Médico:</strong> Dr. García.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Consulta del 15/10/2024
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#historialAccordion">
+          <div class="accordion-body">
+            <strong>Diagnóstico:</strong> Hipertensión arterial.<br>
+            <strong>Tratamiento:</strong> Cambios en la dieta y medicación (Losartán).<br>
+            <strong>Médico:</strong> Dra. Pérez.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-primary text-center py-3 mt-5">
+    <p>&copy; 2024 Torre Médica. Todos los derechos reservados.</p>
+    <div>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
